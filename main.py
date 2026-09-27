@@ -7,8 +7,10 @@ def greet(name: str) -> str:
 
 
 def add(a: int | float, b: int | float) -> int | float:
-    """两数相加（master 版本：支持浮点数）"""
-    return a + b
+    """两数相加：支持浮点数，带调试日志"""
+    result = a + b
+    print(f"[debug] add({a}, {b}) = {result}")
+    return result
 
 
 def main():
