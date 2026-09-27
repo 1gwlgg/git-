@@ -7,8 +7,10 @@ def greet(name: str) -> str:
 
 
 def add(a: int, b: int) -> int:
-    """两数相加"""
-    return a + b
+    """两数相加（fix-1 版本：添加调试日志）"""
+    result = a + b
+    print(f"[debug] add({a}, {b}) = {result}")
+    return result
 
 
 def main():
